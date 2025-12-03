@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: main-zookeeper
-  namespace: kafka-main
+  name: zookeeper
+  namespace: kafka
 spec:
   clusterIP: None
   clusterIPs:

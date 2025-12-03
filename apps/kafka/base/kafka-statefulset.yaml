@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: main-kafka
-  namespace: kafka-main
+  name: kafka
+  namespace: kafka
 spec:
   persistentVolumeClaimRetentionPolicy:
     whenDeleted: Retain
