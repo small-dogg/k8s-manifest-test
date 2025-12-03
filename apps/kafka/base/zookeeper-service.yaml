@@ -1,12 +1,22 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: zookeeper
+  name: main-zookeeper
+  namespace: kafka-main
 spec:
-  ports:
-    - name: client
-      port: 2181
-      targetPort: 2181
   clusterIP: None
+  clusterIPs:
+  - None
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: client
+    port: 2181
+    protocol: TCP
+    targetPort: 2181
   selector:
     app: zookeeper
+  sessionAffinity: None
+  type: ClusterIP
