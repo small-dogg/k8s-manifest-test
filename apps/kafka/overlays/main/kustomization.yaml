@@ -26,10 +26,10 @@ patches:
                 resources:
                   requests:
                     cpu: "100m"
-                    memory: "256Mi"
+                    memory: "1Gi"
                   limits:
                     cpu: "500m"
-                    memory: "512Mi"
+                    memory: "2Gi"
   - target:
       kind: StatefulSet
       name: zookeeper
@@ -47,5 +47,5 @@ patches:
                 resources:
                   requests:
                     cpu: "50m"
-                    memory: "128Mi"
+                    memory: "512Mi"
                     # limits는 필요시 추가
