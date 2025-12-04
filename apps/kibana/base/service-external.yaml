@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana-0-external
+  labels:
+    app: kibana
+spec:
+  type: NodePort
+  selector:
+    app: kibana
+    statefulset.kubernetes.io/pod-name: kibana-0
+  ports:
+    - name: http
+      port: 9200
+      targetPort: 9200
+      nodePort: 32323
