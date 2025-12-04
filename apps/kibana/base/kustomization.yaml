@@ -6,4 +6,5 @@ resources:
   - configmap.yaml
   - deployment.yaml
   - service.yaml
+  - service-external.yaml
 
