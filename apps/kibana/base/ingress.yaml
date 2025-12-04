@@ -5,13 +5,14 @@ metadata:
   name: kibana
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   rules:
-    - host: jerry.world
+    - host: kibana.jerry.world
       http:
         paths:
-          - path: /kibana(/|$)(.*)
+          - path: /
             pathType: Prefix
             backend:
               service:
