@@ -8,3 +8,4 @@ resources:
   - es-service-external.yaml
   - es-deployment.yaml
   - es-configmap.yaml
+  - es-pvc.yaml
