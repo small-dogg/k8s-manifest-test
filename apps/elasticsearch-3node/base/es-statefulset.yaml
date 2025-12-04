@@ -29,7 +29,7 @@ spec:
               containerPort: 9300
           env:
             - name: ES_JAVA_OPTS
-              value: "-Xms1g -Xmx1g"
+              value: "-Xms512m -Xmx512m"
             - name: NODE_NAME
               valueFrom:
                 fieldRef:
