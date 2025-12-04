@@ -27,3 +27,6 @@ data:
     network.host: 0.0.0.0
     http.port: 9200
     transport.port: 9300
+
+    http.cors.enabled: true
+    http.cors.allow-origin: "*"
