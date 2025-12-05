@@ -11,6 +11,6 @@ spec:
     statefulset.kubernetes.io/pod-name: kibana-0
   ports:
     - name: http
-      port: 9200
-      targetPort: 9200
+      port: 5601
+      targetPort: 5601
       nodePort: 32323
