@@ -30,7 +30,7 @@ spec:
         - name: KAFKA_LISTENERS
           value: PLAINTEXT_INTERNAL://0.0.0.0:9092,PLAINTEXT_EXTERNAL://0.0.0.0:9094
         - name: KAFKA_ADVERTISED_LISTENERS
-          value: PLAINTEXT_INTERNAL://main-kafka-0.main-kafka:9092,PLAINTEXT_EXTERNAL://localhost:30092
+          value: PLAINTEXT_INTERNAL://main-kafka-0.main-kafka.kafka-main.svc.cluster.local:9092,PLAINTEXT_EXTERNAL://localhost:30092
         - name: KAFKA_INTER_BROKER_LISTENER_NAME
           value: PLAINTEXT_INTERNAL
         - name: KAFKA_DEFAULT_REPLICATION_FACTOR
